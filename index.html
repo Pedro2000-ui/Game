@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Jogo da Velha</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+
+    <h1 id="titulo">Jogo da Velha</h1>
+    
+    <div id='mostrador'>
+      <h2 id="vezDojogador">Vez do jogador</h2>
+      <img id="imgVezJogador">
+    </div>
+
+    <table id='pontuacao'>
+      <tr>
+          <td id="placar">PLACAR</td>
+      </tr>
+      <tr>
+          <td>X</td>
+          <td id="pontJg1"><input id="pontoJg1" class="pontos" type="number" value="0"</td>
+      </tr>
+      <tr>
+          <td>O</td>
+          <td id="pontJg2"><input id="pontoJg2" class="pontos" type="number" value="0"</td>
+      </tr>
+      <tr>
+          <td id="placar">MOVIMENTOS</td>
+      </tr>
+      <tr>
+          <td>X</td>
+          <td id="movimentJg1"><input id="movimentoJg1" class="pontos" value="0" type="number"</td>
+      </tr>
+      <tr>
+          <td>O</td>
+          <td id="movimentJg2"><input id="movimentoJg2" class="pontos" value="0" type="number"</td>
+      </tr>
+      
+    </table>
+   <div id="tabuleiro">
+      
+      <div class="casa" id="a1" jogada=""></div>
+      <div class="casa" id="a2" jogada=""></div>
+      <div class="casa" id="a3" jogada=""></div>
+      
+      <div class="casa" id="b1" jogada=""></div>
+      <div class="casa" id="b2" jogada=""></div>
+      <div class="casa" id="b3" jogada=""></div>
+      
+      <div class="casa" id="c1" jogada=""></div>
+      <div class="casa" id="c2" jogada=""></div>
+      <div class="casa" id="c3" jogada=""></div>
+    </div>
+    <button class="botaoreinicio" onclick="reinicio()">Reiniciar Partida </button>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+

@@ -1,0 +1,67 @@
+body {
+background-color: black;
+
+}
+
+#tabuleiro
+{
+  width: 300px;
+  height: 300px;
+  border-style: solid;
+  border-color: orange;
+  margin: 0px auto;
+  
+}
+
+#titulo {
+  color: orange;
+  text-align: center;
+}
+
+#pontuacao {
+   color: orange;
+   float: right;
+   margin-right: 200px;
+}
+
+.casa {
+  width: 98px;
+  height: 99px;
+  border-style: solid;
+  border-color: orange;
+  border-width: 1px;
+  float: left;
+  
+}
+
+div img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;;
+  
+}
+
+h2 {
+  float: left;
+  color: orange;
+  margin-left: 45px;
+}
+
+#imgVezJogador {
+  margin-top: auto;
+  margin-left: 5px;
+}
+
+.pontos {
+  background-color: black;
+  border: none;
+  color: orange;
+}
+
+.botaoreinicio {
+  background-color: black;
+  color: orange;
+  float: left;
+  margin-left: 200px;
+}
