@@ -1,12 +1,14 @@
 body {
 background-color: black;
+box-sizing: border-box;
+font-family: 'Staatliches';
 
 }
 
 #tabuleiro
 {
-  width: 300px;
-  height: 300px;
+  width: 306px;
+  height: 306px;
   border-style: solid;
   border-color: orange;
   margin: 0px auto;
@@ -19,14 +21,18 @@ background-color: black;
 }
 
 #pontuacao {
-   color: orange;
-   float: right;
-   margin-right: 200px;
+  color: orange;
+  float: right;
+  bottom: 180px;
+  right: 105px;
+  position: absolute;
+  font-size: 2rem;
+  
 }
 
 .casa {
-  width: 98px;
-  height: 99px;
+  width: 100px;
+  height: 100px;
   border-style: solid;
   border-color: orange;
   border-width: 1px;
@@ -36,21 +42,27 @@ background-color: black;
 
 div img {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;;
+  margin-top: 20px;
+  margin-left: 20px;
+  height: 60px;
+  width: 60px;
+  
   
 }
 
 h2 {
   float: left;
   color: orange;
-  margin-left: 45px;
+  margin-left: 45%;
+  margin-right: 20px;
+  margin-top: 8px;
 }
 
+
 #imgVezJogador {
-  margin-top: auto;
-  margin-left: 5px;
+  margin-bottom: 15px;
+  height: 50px;
+  width: 50px;
 }
 
 .pontos {
@@ -62,6 +74,61 @@ h2 {
 .botaoreinicio {
   background-color: black;
   color: orange;
-  float: left;
-  margin-left: 200px;
+  bottom: 30px;
+  right: 30px;
+  position: fixed;
+}
+
+@media screen and (max-width: 1200px)
+{ 
+  #pontuacao {
+    bottom: -120px;
+    right: 30%;
+  }
+
+  h2 {
+    margin-left: 40%;
+
+  }
+}
+
+@media screen and (max-width: 880px)
+{ 
+  #pontuacao {
+    right: 20%;
+  }
+
+  h2 {
+    margin-left: 30%;
+
+  }
+}
+
+
+@media screen and (max-width: 520px)
+{
+
+  #pontuacao {
+    right: 5%; 
+    bottom: -115px;
+  }
+
+}
+
+
+
+@media screen and (max-width: 410px)
+{ 
+  #pontuacao {
+    right: -10%;
+    bottom: -165px;
+  }
+    
+
+  h2 {
+    margin-left: 20%;
+
+  }
+
+  
 }

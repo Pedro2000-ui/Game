@@ -2,9 +2,11 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width", inicial-scale=1.0">
     <title>Jogo da Velha</title>
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">  
   </head>
   <body>
 
@@ -15,6 +17,22 @@
       <img id="imgVezJogador">
     </div>
 
+    
+   <div id="tabuleiro">
+      
+      <div class="casa" id="a1" jogada=""></div>
+      <div class="casa" id="a2" jogada=""></div>
+      <div class="casa" id="a3" jogada=""></div>
+      
+      <div class="casa" id="b1" jogada=""></div>
+      <div class="casa" id="b2" jogada=""></div>
+      <div class="casa" id="b3" jogada=""></div>
+      
+      <div class="casa" id="c1" jogada=""></div>
+      <div class="casa" id="c2" jogada=""></div>
+      <div class="casa" id="c3" jogada=""></div>
+    </div>
+    
     <table id='pontuacao'>
       <tr>
           <td id="placar">PLACAR</td>
@@ -40,20 +58,7 @@
       </tr>
       
     </table>
-   <div id="tabuleiro">
-      
-      <div class="casa" id="a1" jogada=""></div>
-      <div class="casa" id="a2" jogada=""></div>
-      <div class="casa" id="a3" jogada=""></div>
-      
-      <div class="casa" id="b1" jogada=""></div>
-      <div class="casa" id="b2" jogada=""></div>
-      <div class="casa" id="b3" jogada=""></div>
-      
-      <div class="casa" id="c1" jogada=""></div>
-      <div class="casa" id="c2" jogada=""></div>
-      <div class="casa" id="c3" jogada=""></div>
-    </div>
+    
     <button class="botaoreinicio" onclick="reinicio()">Reiniciar Partida </button>
     <script src="script.js"></script>
   </body>
